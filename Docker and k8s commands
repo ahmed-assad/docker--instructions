@@ -1,0 +1,64 @@
+docker image pull fedora
+docker image ls 
+docker image ls -a
+docker container create -it fedora bash
+docker container start -i 90b
+cat /etc/*hostname*
+cat /etc/*release*
+exit
+docker container run Python
+docker container run -it Python /bin/bash
+ps 
+python3 -v
+docker container rm bd8
+docker image  rm pyhton fedora
+ps -elf | grep containerd
+docker image inspect
+exec(open('').read())
+ip link show
+3:20
+
+ip addr show 
+docker network ls
+docker network create mynet -d bridge
+docker network connect
+docker network disconnect
+docker network connect
+docker network create --internal mynet 
+docker container run -it --volume (directory path on host):(directory path on container)
+
+docker commit (docker container name) (account name/image name)
+
+
+Docker file:
+From (base image)
+workdir
+expose
+copy
+run
+cmd
+shell 
+add
+env
+label
+entrypoint
+6:10
+
+docker swarm init --advertise-addr 192.168.1.128:2377 --isten-addr 192.168.1.128:2377
+
+docker swarm join-token worker 
+
+docker info 
+docker node ls 
+docker service create --name (service name) -p 80:80 --replicas (no.of replicas) nginx:latest
+
+docker service ls 
+docker service scale ()service name)=number 
+docker service ps
+ 
+docker service update --image (image name) --update-parallelism (no of containers) --update delay (time duration seconds)
+
+docker service rollback 
+7:50
+
+8:20
